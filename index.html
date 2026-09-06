@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Question Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Math Question Generator</h1>
+        
+        <div id="unit-selection" class="view">
+            <h2>Select a Unit</h2>
+            <div id="unit-list" class="grid"></div>
+        </div>
+
+        <div id="subunit-selection" class="view hidden">
+            <button id="back-to-units" class="btn secondary">← Back to Units</button>
+            <h2 id="unit-title"></h2>
+            <div id="subunit-list" class="grid"></div>
+        </div>
+
+        <div id="question-view" class="view hidden">
+            <button id="back-to-subunits" class="btn secondary">← Back to Sub-units</button>
+            <h3 id="subunit-title"></h3>
+            
+            <div class="card">
+                <p id="question-text">Loading question...</p>
+            </div>
+
+            <button id="show-answer-btn" class="btn primary">Show Answer / Solution</button>
+
+            <div id="answer-container" class="card hidden">
+                <h4>Solution Guidance:</h4>
+                <p id="answer-text"></p>
+            </div>
+
+            <button id="next-question-btn" class="btn primary hidden">Next Randomized Question</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
